@@ -1,4 +1,4 @@
-/* Reset and Global Styles */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     background-color: #1e1e2f;
     color: white;
     text-align: center;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -41,18 +41,18 @@ nav {
     gap: 20px;
 }
 
-.link a {
+.links a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     transition: 0.3s;
 }
 
-.link a:hover {
+.links a:hover {
     color: #00b894;
 }
 
-/* Mobile Navbar */
+/* Mobile Menu */
 .hamburg, .cancel {
     display: none;
     font-size: 26px;
@@ -60,7 +60,6 @@ nav {
     color: white;
 }
 
-/* Mobile Menu */
 .dropdown {
     position: fixed;
     top: 0;
@@ -80,7 +79,6 @@ nav {
     font-size: 22px;
     margin: 15px 0;
     text-decoration: none;
-    display: block;
 }
 
 .cancel {
@@ -91,7 +89,7 @@ nav {
 
 /* Hero Section */
 .main-container {
-    margin-top: 80px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,10 +97,10 @@ nav {
     padding: 20px;
 }
 
-/* Fix Profile Image */
+/* Profile Image */
 .image {
-    width: 100%;
-    max-width: 250px; /* Ensures it doesn't get too big */
+    width: 250px;
+    height: 250px;
     overflow: hidden;
     border-radius: 50%;
     border: 4px solid #00b894;
@@ -111,7 +109,7 @@ nav {
 
 .profile-image {
     width: 100%;
-    height: auto; /* Prevents distortion */
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -128,12 +126,10 @@ h1 {
     margin-bottom: 10px;
 }
 
-.typewriter {
-    font-size: 20px;
+.highlight {
+    font-size: 24px;
     font-weight: bold;
     color: #00b894;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 /* Social Links */
@@ -152,7 +148,7 @@ h1 {
     color: #00b894;
 }
 
-/* Mobile Optimization */
+/* Responsive Design */
 @media (max-width: 768px) {
     .links {
         display: none;
@@ -160,10 +156,6 @@ h1 {
 
     .hamburg {
         display: block;
-    }
-
-    .main-container {
-        text-align: center;
     }
 
     .profile-image {
@@ -174,7 +166,11 @@ h1 {
         font-size: 24px;
     }
 
-    .typewriter {
-        font-size: 18px;
+    .highlight {
+        font-size: 20px;
+    }
+
+    .dropdown {
+        left: -100%;
     }
 }
