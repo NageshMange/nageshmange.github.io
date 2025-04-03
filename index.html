@@ -18,54 +18,50 @@
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
-                
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="mangenagesh@gmail.com">Contact</a></div>
-        </div>
-        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-    </div>
-        <div class="dropdown">
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                
-                <a href="#">Contact</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="mailto:mangenagesh@gmail.com">Contact</a></div>
             </div>
+            <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
         </div>
     </nav>
+
+    <!-- Mobile Dropdown -->
+    <div class="dropdown">
+        <div class="dropdown-content">
+            <a href="#" onclick="closeMenu()">Home</a>
+            <a href="#" onclick="closeMenu()">About</a>
+            <a href="#" onclick="closeMenu()">Skills</a>
+            <a href="mailto:mangenagesh@gmail.com" onclick="closeMenu()">Contact</a>
+            <i class="fa-solid fa-xmark cancel" onclick="toggleMenu()"></i>
+        </div>
+    </div>
+
     <section>
         <div class="main-container">
             <div class="image" data-aos="zoom-out" data-aos-duration="3000">
                 <img src="Nageshprofile.jpg" alt="Error loading image" class="profile-image">
             </div>
             <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm Nagesh <span></span></h1>
-                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
-                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I am a passionate and skilled software developer with expertise in C++, Java, and front-end development. I specialize in building high-performance applications, crafting efficient algorithms, and designing responsive web interfaces. With a strong foundation in object-oriented programming, data structures, and web technologies, I create seamless user experiences and scalable software solutions.
-
-                    Currently, I am expanding my knowledge in backend development with Node Js and aiming to become a Full Stack Web Developer.<br>
-                    
-                    🚀 Tech Stack:<br>
-                    ✔ C++ | Java | HTML | CSS | JavaScript |<br>
-                    ✔ Data Structures & Algorithms<br>
-                    ✔ Object-Oriented Design & Software Engineering Principles<br>
-                    ✔ Version Control (Git & GitHub)<br></p>
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey, I'm Nagesh <span></span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                    I'm a <span class="typewriter-text"></span><label>|</label>
+                </div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+                    I am a passionate software developer skilled in C++, Java, and front-end development. Currently expanding my knowledge in backend development to become a Full Stack Web Developer.
+                </p>
                 <div class="social-links">
                     <a href="https://github.com/NageshMange" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
-                    
                     <a href="https://www.linkedin.com/in/nageshmange/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
-                    
                 </div>
                 <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
-                    
+                    <a href="resume.pdf" download class="resume-btn">Download Resume</a>
                 </div>
             </div>
         </div>
     </section>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({offset:0});
+      AOS.init({ offset: 0 });
     </script>
     <script src="script.js"></script>
 </body>
