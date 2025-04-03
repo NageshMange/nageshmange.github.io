@@ -38,3 +38,7 @@ function eraseText(){
     }
 }
 window.onload = typeWriter
+function toggleMenu() {
+    let menu = document.querySelector(".dropdown");
+    menu.style.left = menu.style.left === "0px" ? "-100%" : "0px";
+}
