@@ -1,60 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nagesh Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nagesh Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">Nagesh<span> Mange</span></div>
-        <div class="links">
-            <a href="index.html">Home</a>
-            <a href="index.html">About</a>
-            <a href="skills.html">Skills</a>
-            <a href="mailto:mangenagesh@gmail.com">Contact</a>
-        </div>
-        <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div class="dropdown" id="mobile-menu">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Skills</a>
-        <a href="mailto:mangenagesh@gmail.com">Contact</a>
-        <i class="fa-solid fa-xmark cancel" onclick="toggleMenu()"></i>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Nagesh<span> Mange</span></div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="Experience.html">Experience</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="mailto:mangenagesh@gmail.com">Contact</a>
     </div>
+    <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+  </nav>
 
-    <!-- Main Section -->
-    <section class="main-container">
-        <div class="image">
-            <img src="Nageshprofile.jpg" alt="Profile Image" class="profile-image">
-        </div>
-        <div class="content">
-            <h1>Hey, I'm Nagesh</h1>
-            <p>I'm a <span class="highlight">Tech Enthusiast</span></p>
-            <p>
-                I am a passionate software developer skilled in C++, Java, and front-end development. 
-                Currently expanding my knowledge in backend development to become a Full Stack Web Developer.
-            </p>
-            <div class="social-links">
-                <a href="https://github.com/NageshMange"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/nageshmange/"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-    </section>
+  <!-- Mobile Menu -->
+  <div class="dropdown" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="Experience.html">Experience</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="mailto:mangenagesh@gmail.com">Contact</a>
+    <i class="fa-solid fa-xmark cancel" onclick="toggleMenu()"></i>
+  </div>
 
-    <script>
-        function toggleMenu() {
-            let menu = document.getElementById("mobile-menu");
-            menu.style.left = menu.style.left === "0px" ? "-100%" : "0px";
-        }
-    </script>
+  <!-- Main Section -->
+  <section class="main-container">
+    <div class="image">
+      <img src="Nageshprofile.jpg" alt="Profile Image" class="profile-image" />
+    </div>
+    <div class="content">
+      <h1>Hey, I'm Nagesh</h1>
+      <p>I'm a <span class="highlight typewriter-text"></span></p>
+      <p>
+        I am a passionate software developer skilled in C++, Java, and front-end development.
+        Currently expanding my knowledge in backend development to become a Full Stack Web Developer.
+      </p>
+      <div class="social-links">
+        <a href="https://github.com/NageshMange"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nageshmange/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/its_nageshmange/"><i class="fa-brands fa-instagram"></i></a>  
+    </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>

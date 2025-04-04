@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Nagesh Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Nagesh<span> Mange</span></div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="mailto:mangenagesh@gmail.com">Contact</a>
+    </div>
+    <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="dropdown" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="experience.html">Experience</a>
+    <a href="mailto:mangenagesh@gmail.com">Contact</a>
+    <i class="fa-solid fa-xmark cancel" onclick="toggleMenu()"></i>
+  </div>
+
+  <!-- Projects Section -->
+  <section class="skills-container">
+    <h2>My Projects</h2>
+    <div class="skills-list">
+      <div class="skill">
+        <i class="fa-solid fa-chart-simple"></i>
+        <h3>StatSolver Web Application</h3>
+        <p>
+          A dynamic web app designed to perform a wide range of statistical operations such as mean, median, mode, standard deviation, probability distributions, and more. Built with HTML, CSS, JavaScript
+        </p>
+       <a href="https://nageshmange.github.io/StatSolver/" style="color: #00b894"> https://nageshmange.github.io/StatSolver/</a>   
+        <p>
+          <a href="https://github.com/NageshMange/StatSolver" target="_blank" style="color: #00b894;">View on GitHub</a>
+        </p>
+      </div>
+      <!-- Add more projects here if needed -->
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.style.left = menu.style.left === "0px" ? "-100%" : "0px";
+    }
+  </script>
+</body>
+</html>
