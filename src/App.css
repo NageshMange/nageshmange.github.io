@@ -1232,99 +1232,296 @@ a:hover .fa-whatsapp {
   color: #25D366 !important;
 }
 
-/* Experience Section Mobile Optimization */
-.experience-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Enhanced Experience Section - Mobile First */
+.mobile-experience-card {
+  border-radius: 20px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
 }
 
-.experience-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+.mobile-experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* Mobile-specific experience styling */
-@media (max-width: 768px) {
-  .experience-card .card-body {
-    padding: 1.5rem !important;
+.mobile-experience-card .card-body {
+  padding: 2rem 1.5rem !important;
+}
+
+.mobile-experience-card h3 {
+  font-size: 1.5rem !important;
+  line-height: 1.3;
+  color: #0d6efd !important;
+  margin-bottom: 1rem !important;
+}
+
+.mobile-experience-card h5 {
+  font-size: 1rem !important;
+  font-weight: 600;
+  color: #6c757d !important;
+}
+
+.mobile-experience-card h6 {
+  font-size: 1.1rem !important;
+  font-weight: 700;
+  color: #495057 !important;
+  margin-bottom: 1rem !important;
+}
+
+.mobile-experience-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #6c757d;
+  margin-bottom: 1.5rem !important;
+}
+
+.mobile-experience-card .small {
+  font-size: 0.9rem !important;
+  line-height: 1.6;
+  color: #495057;
+  font-weight: 500;
+}
+
+.mobile-experience-card .badge {
+  font-size: 0.85rem !important;
+  padding: 8px 16px !important;
+  border-radius: 20px !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 2px;
+}
+
+/* Responsibility Cards Styling */
+.mobile-experience-card .row .col-12 > div {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 8px;
+  transition: all 0.2s ease;
+}
+
+.mobile-experience-card .row .col-12 > div:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Tablet Styles */
+@media (max-width: 992px) {
+  .mobile-experience-card .card-body {
+    padding: 1.8rem 1.3rem !important;
   }
   
-  .experience-card h3 {
+  .mobile-experience-card h3 {
     font-size: 1.4rem !important;
-    line-height: 1.3;
-    text-align: center;
   }
   
-  .experience-card h5 {
+  .mobile-experience-card h5 {
+    font-size: 0.95rem !important;
+  }
+}
+
+/* Mobile Portrait and Landscape */
+@media (max-width: 768px) {
+  .mobile-experience-card {
+    margin: 0 0.5rem 2rem 0.5rem;
+    border-radius: 15px !important;
+  }
+  
+  .mobile-experience-card .card-body {
+    padding: 1.5rem 1rem !important;
+  }
+  
+  .mobile-experience-card h3 {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.8rem !important;
+  }
+  
+  .mobile-experience-card h5 {
+    font-size: 0.9rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .mobile-experience-card h6 {
     font-size: 1rem !important;
-    text-align: center;
+    margin-bottom: 0.8rem !important;
   }
   
-  .experience-card p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-  
-  .experience-card ul li {
+  .mobile-experience-card p {
     font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 0.75rem !important;
+    line-height: 1.6;
+    margin-bottom: 1.2rem !important;
   }
   
-  .experience-card .badge {
-    font-size: 0.8rem;
-    padding: 6px 12px;
-    margin: 2px;
+  .mobile-experience-card .small {
+    font-size: 0.85rem !important;
+    line-height: 1.5;
+  }
+  
+  .mobile-experience-card .badge {
+    font-size: 0.8rem !important;
+    padding: 6px 12px !important;
+  }
+  
+  .mobile-experience-card .bg-primary {
+    width: 60px !important;
+    height: 60px !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .mobile-experience-card .bg-primary span {
+    font-size: 1.6rem !important;
+  }
+  
+  /* Better spacing for mobile */
+  .mobile-experience-card .mb-3 {
+    margin-bottom: 0.8rem !important;
+  }
+  
+  .mobile-experience-card .mb-4 {
+    margin-bottom: 1.2rem !important;
+  }
+}
+
+/* Mobile Portrait - Small Screens */
+@media (max-width: 576px) {
+  .mobile-experience-card {
+    margin: 0 0.25rem 1.5rem 0.25rem;
+    border-radius: 12px !important;
+  }
+  
+  .mobile-experience-card .card-body {
+    padding: 1.2rem 0.8rem !important;
+  }
+  
+  .mobile-experience-card h3 {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.6rem !important;
+    line-height: 1.2;
+  }
+  
+  .mobile-experience-card h5 {
+    font-size: 0.85rem !important;
+    margin-bottom: 0.8rem !important;
+  }
+  
+  .mobile-experience-card h6 {
+    font-size: 0.95rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+  
+  .mobile-experience-card p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 1rem !important;
+  }
+  
+  .mobile-experience-card .small {
+    font-size: 0.8rem !important;
+    line-height: 1.4;
+  }
+  
+  .mobile-experience-card .badge {
+    font-size: 0.75rem !important;
+    padding: 4px 8px !important;
+    margin: 1px;
+  }
+  
+  .mobile-experience-card .bg-primary {
+    width: 50px !important;
+    height: 50px !important;
+    padding: 0.6rem !important;
+  }
+  
+  .mobile-experience-card .bg-primary span {
+    font-size: 1.3rem !important;
+  }
+  
+  /* Tighter spacing for small mobile */
+  .mobile-experience-card .mb-3 {
+    margin-bottom: 0.6rem !important;
+  }
+  
+  .mobile-experience-card .mb-4 {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Responsibility items spacing */
+  .mobile-experience-card .row .g-2 {
+    --bs-gutter-y: 0.3rem;
+  }
+  
+  .mobile-experience-card .row .col-12 > div {
+    padding: 0.6rem !important;
+    margin-bottom: 4px;
+  }
+  
+  .mobile-experience-card .row .col-12 span:first-child {
+    font-size: 1rem !important;
+    min-width: 20px !important;
+    margin-right: 0.6rem !important;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .mobile-experience-card {
+    margin: 0 0.1rem 1.2rem 0.1rem;
+  }
+  
+  .mobile-experience-card .card-body {
+    padding: 1rem 0.6rem !important;
+  }
+  
+  .mobile-experience-card h3 {
+    font-size: 1rem !important;
+  }
+  
+  .mobile-experience-card h5 {
+    font-size: 0.8rem !important;
+  }
+  
+  .mobile-experience-card .bg-primary {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  
+  .mobile-experience-card .bg-primary span {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* Experience Section Container */
+#experience {
+  padding: 2rem 0 !important;
+}
+
+@media (max-width: 768px) {
+  #experience {
+    padding: 1.5rem 0 !important;
+  }
+  
+  #experience .container {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
   }
 }
 
 @media (max-width: 576px) {
-  .experience-card .card-body {
-    padding: 1rem !important;
+  #experience {
+    padding: 1.2rem 0 !important;
   }
   
-  .experience-card h3 {
-    font-size: 1.2rem !important;
+  #experience .container {
+    padding-left: 0.3rem !important;
+    padding-right: 0.3rem !important;
   }
   
-  .experience-card h5 {
+  #experience .display-5 {
+    font-size: 1.4rem !important;
+    margin-bottom: 0.8rem !important;
+  }
+  
+  #experience .lead {
     font-size: 0.9rem !important;
-  }
-  
-  .experience-card p {
-    font-size: 0.9rem;
-  }
-  
-  .experience-card ul li {
-    font-size: 0.85rem;
-  }
-  
-  .experience-card .badge {
-    font-size: 0.75rem;
-    padding: 4px 8px;
-  }
-  
-  /* Better spacing for mobile */
-  .experience-card .mb-3 {
-    margin-bottom: 1rem !important;
-  }
-  
-  .experience-card .mb-4 {
-    margin-bottom: 1.5rem !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .experience-card h3 {
-    font-size: 1.1rem !important;
-  }
-  
-  .experience-card .bg-primary {
-    width: 50px !important;
-    height: 50px !important;
-  }
-  
-  .experience-card .bg-primary span {
-    font-size: 1.2rem !important;
   }
 }
 

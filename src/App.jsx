@@ -285,64 +285,77 @@ function App() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-5 bg-light mobile-section">
+      <section id="experience" className="py-4 py-md-5 bg-light mobile-section">
         <Container>
-          <Row className="justify-content-center mb-4 mb-lg-5">
-            <Col lg={8} className="text-center">
+          <Row className="justify-content-center mb-4">
+            <Col xs={12} className="text-center">
               <h2 className="display-5 fw-bold mb-3">Experience</h2>
-              <p className="lead text-muted">My professional journey and work experience</p>
+              <p className="lead text-muted mb-0">My professional journey and work experience</p>
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col lg={10} xl={8}>
-              <Card className="border-0 shadow-lg experience-card">
-                <Card.Body className="p-3 p-md-4 p-lg-5">
-                  <div className="d-flex flex-column d-md-flex flex-md-row align-items-start">
-                    <div className="bg-primary rounded-circle p-3 me-0 me-md-4 mb-3 mb-md-0 mx-auto mx-md-0 flex-shrink-0" 
-                         style={{width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                      <span style={{color: 'white', fontSize: '1.5rem'}}>💼</span>
+            <Col xs={12} sm={11} md={10} lg={8}>
+              <Card className="border-0 shadow experience-card mobile-experience-card">
+                <Card.Body className="p-3 p-sm-4">
+                  {/* Mobile-First Layout */}
+                  <div className="text-center mb-4">
+                    <div className="bg-primary rounded-circle p-3 mx-auto mb-3" 
+                         style={{width: '70px', height: '70px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                      <span style={{color: 'white', fontSize: '1.8rem'}}>💼</span>
                     </div>
-                    <div className="w-100 text-center text-md-start">
-                      <div className="d-flex flex-column d-md-flex flex-md-row justify-content-between align-items-center align-items-md-start mb-3">
-                        <h3 className="text-primary fw-bold mb-2 mb-md-0">C++ Programming Intern</h3>
-                        <Badge bg="primary" className="fs-6 px-3 py-2">Completed</Badge>
-                      </div>
-                      <h5 className="text-secondary mb-3">🏢 CodSoft • 📅 February - March 2025</h5>
-                      <p className="text-muted mb-4 fs-6">
-                        Successfully completed a C++ Programming internship at CodSoft, where I gained valuable 
-                        hands-on experience in software development and collaborated with experienced developers.
-                      </p>
-                      <div className="mb-4">
-                        <h6 className="fw-bold mb-3">Key Responsibilities:</h6>
-                        <ul className="list-unstyled">
-                          <li className="mb-2 d-flex align-items-start">
-                            <span className="me-2" style={{minWidth: '20px'}}>💻</span>
-                            <span>Developing and maintaining C++ applications</span>
-                          </li>
-                          <li className="mb-2 d-flex align-items-start">
-                            <span className="me-2" style={{minWidth: '20px'}}>🤝</span>
-                            <span>Collaborating on software development projects</span>
-                          </li>
-                          <li className="mb-2 d-flex align-items-start">
-                            <span className="me-2" style={{minWidth: '20px'}}>📚</span>
-                            <span>Learning industry best practices and coding standards</span>
-                          </li>
-                          <li className="mb-2 d-flex align-items-start">
-                            <span className="me-2" style={{minWidth: '20px'}}>🔧</span>
-                            <span>Gaining experience in problem-solving and debugging</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h6 className="fw-bold mb-3">Skills Developed:</h6>
-                        <div className="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
-                          <Badge bg="primary" className="px-3 py-2">C++ Programming</Badge>
-                          <Badge bg="secondary" className="px-3 py-2">OOP</Badge>
-                          <Badge bg="info" className="px-3 py-2">Problem Solving</Badge>
-                          <Badge bg="success" className="px-3 py-2">Team Collaboration</Badge>
-                          <Badge bg="warning" className="px-3 py-2">Code Review</Badge>
+                    <h3 className="text-primary fw-bold mb-2 h4">C++ Programming Intern</h3>
+                    <Badge bg="primary" className="mb-3 px-3 py-2 fs-6">Completed</Badge>
+                    <h5 className="text-secondary mb-3 fs-6">🏢 CodSoft • 📅 February - March 2025</h5>
+                  </div>
+                  
+                  {/* Description */}
+                  <div className="mb-4">
+                    <p className="text-muted mb-0 lh-base" style={{fontSize: '0.95rem'}}>
+                      Successfully completed a C++ Programming internship at CodSoft, where I gained valuable 
+                      hands-on experience in software development and collaborated with experienced developers.
+                    </p>
+                  </div>
+                  
+                  {/* Key Responsibilities */}
+                  <div className="mb-4">
+                    <h6 className="fw-bold mb-3 text-center">🔑 Key Responsibilities</h6>
+                    <div className="row g-2">
+                      <div className="col-12">
+                        <div className="d-flex align-items-start p-2 rounded" style={{backgroundColor: 'rgba(13, 110, 253, 0.05)'}}>
+                          <span className="me-3 fs-5" style={{minWidth: '25px'}}>💻</span>
+                          <span className="small">Developing and maintaining C++ applications</span>
                         </div>
                       </div>
+                      <div className="col-12">
+                        <div className="d-flex align-items-start p-2 rounded" style={{backgroundColor: 'rgba(25, 135, 84, 0.05)'}}>
+                          <span className="me-3 fs-5" style={{minWidth: '25px'}}>🤝</span>
+                          <span className="small">Collaborating on software development projects</span>
+                        </div>
+                      </div>
+                      <div className="col-12">
+                        <div className="d-flex align-items-start p-2 rounded" style={{backgroundColor: 'rgba(13, 202, 240, 0.05)'}}>
+                          <span className="me-3 fs-5" style={{minWidth: '25px'}}>📚</span>
+                          <span className="small">Learning industry best practices and coding standards</span>
+                        </div>
+                      </div>
+                      <div className="col-12">
+                        <div className="d-flex align-items-start p-2 rounded" style={{backgroundColor: 'rgba(255, 193, 7, 0.05)'}}>
+                          <span className="me-3 fs-5" style={{minWidth: '25px'}}>🔧</span>
+                          <span className="small">Gaining experience in problem-solving and debugging</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Skills Developed */}
+                  <div>
+                    <h6 className="fw-bold mb-3 text-center">🚀 Skills Developed</h6>
+                    <div className="d-flex flex-wrap gap-2 justify-content-center">
+                      <Badge bg="primary" className="px-3 py-2" style={{fontSize: '0.8rem'}}>C++ Programming</Badge>
+                      <Badge bg="secondary" className="px-3 py-2" style={{fontSize: '0.8rem'}}>OOP</Badge>
+                      <Badge bg="info" className="px-3 py-2" style={{fontSize: '0.8rem'}}>Problem Solving</Badge>
+                      <Badge bg="success" className="px-3 py-2" style={{fontSize: '0.8rem'}}>Team Collaboration</Badge>
+                      <Badge bg="warning" className="px-3 py-2" style={{fontSize: '0.8rem'}}>Code Review</Badge>
                     </div>
                   </div>
                 </Card.Body>
