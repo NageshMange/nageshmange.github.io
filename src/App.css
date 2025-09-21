@@ -1460,24 +1460,6 @@ a:hover .fa-whatsapp {
     margin-right: 0.6rem !important;
   }
   
-  /* Skills Section for small mobile */
-  .skills-developed-section {
-    margin-top: 1rem !important;
-    padding: 0.8rem !important;
-    border-radius: 10px !important;
-  }
-  
-  .skills-badges-container {
-    gap: 0.25rem !important;
-  }
-  
-  .skill-badge {
-    font-size: 0.7rem !important;
-    padding: 4px 8px !important;
-    margin: 0.1rem !important;
-    min-height: 28px !important;
-    border-radius: 15px !important;
-  }
 }
 
 /* Extra Small Devices */
@@ -1546,37 +1528,6 @@ a:hover .fa-whatsapp {
   }
 }
 
-/* Skills Developed Section Styling */
-.skills-developed-section {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background: rgba(13, 110, 253, 0.03);
-  border-radius: 15px;
-  border: 1px solid rgba(13, 110, 253, 0.1);
-}
-
-.skills-badges-container {
-  min-height: 60px;
-  padding: 0.5rem;
-}
-
-.skill-badge {
-  transition: all 0.3s ease !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  border: none !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.3px;
-  margin: 0.25rem !important;
-  display: inline-flex !important;
-  align-items: center;
-  white-space: nowrap;
-  min-height: 36px;
-}
-
-.skill-badge:hover {
-  transform: translateY(-2px) scale(1.05) !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
-}
 
 /* Experience Card Enhanced Styling */
 .mobile-experience-card {
@@ -1668,24 +1619,6 @@ a:hover .fa-whatsapp {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   }
   
-  /* Skills Section Mobile */
-  .skills-developed-section {
-    margin-top: 1.5rem !important;
-    padding: 1rem !important;
-    background: rgba(13, 110, 253, 0.05) !important;
-  }
-  
-  .skills-badges-container {
-    gap: 0.5rem !important;
-    padding: 0.3rem !important;
-  }
-  
-  .skill-badge {
-    font-size: 0.8rem !important;
-    padding: 6px 12px !important;
-    margin: 0.15rem !important;
-    min-height: 32px !important;
-  }
 }
 
 /* Additional centering fixes */

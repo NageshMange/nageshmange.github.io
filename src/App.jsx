@@ -304,7 +304,6 @@ function App() {
                       <span style={{color: 'white', fontSize: '2rem'}}>💼</span>
                     </div>
                     <h3 className="text-primary fw-bold mb-3">C++ Programming Intern</h3>
-                    <Badge bg="primary" className="mb-3 px-4 py-2 fs-6 fw-bold">✅ Completed</Badge>
                     <h5 className="text-secondary mb-4 lh-base">🏢 CodSoft • 📅 February - March 2025</h5>
                   </div>
                   
@@ -344,48 +343,6 @@ function App() {
                           <span className="small">Gaining experience in problem-solving and debugging</span>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  
-                  {/* Skills Developed */}
-                  <div className="skills-developed-section">
-                    <h6 className="fw-bold mb-4 text-center text-primary">🚀 Skills Developed</h6>
-                    <div className="d-flex flex-wrap justify-content-center gap-3 skills-badges-container">
-                      <Badge 
-                        bg="primary" 
-                        className="skill-badge px-3 py-2 fw-semibold" 
-                        style={{fontSize: '0.85rem', borderRadius: '20px'}}
-                      >
-                        💻 C++ Programming
-                      </Badge>
-                      <Badge 
-                        bg="secondary" 
-                        className="skill-badge px-3 py-2 fw-semibold" 
-                        style={{fontSize: '0.85rem', borderRadius: '20px'}}
-                      >
-                        🏢 OOP
-                      </Badge>
-                      <Badge 
-                        bg="info" 
-                        className="skill-badge px-3 py-2 fw-semibold" 
-                        style={{fontSize: '0.85rem', borderRadius: '20px'}}
-                      >
-                        🧠 Problem Solving
-                      </Badge>
-                      <Badge 
-                        bg="success" 
-                        className="skill-badge px-3 py-2 fw-semibold" 
-                        style={{fontSize: '0.85rem', borderRadius: '20px'}}
-                      >
-                        🤝 Team Collaboration
-                      </Badge>
-                      <Badge 
-                        bg="warning" 
-                        className="skill-badge px-3 py-2 fw-semibold text-dark" 
-                        style={{fontSize: '0.85rem', borderRadius: '20px'}}
-                      >
-                        📝 Code Review
-                      </Badge>
                     </div>
                   </div>
                 </Card.Body>
