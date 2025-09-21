@@ -26,9 +26,6 @@ const Experience = () => {
                   <div className="flex-grow-1">
                     <div className="d-flex flex-column flex-md-row justify-content-between align-items-start mb-2">
                       <h3 className="fw-bold text-primary mb-1">C++ Programming Intern</h3>
-                      <Badge bg="success" className="mb-2 mb-md-0">
-                        Current Position
-                      </Badge>
                     </div>
                     
                     <div className="d-flex align-items-center mb-3">
@@ -64,17 +61,6 @@ const Experience = () => {
                           Gaining experience in problem-solving and debugging
                         </li>
                       </ul>
-                    </div>
-
-                    <div>
-                      <h6 className="fw-bold mb-3">Skills Developed:</h6>
-                      <div className="d-flex flex-wrap gap-2">
-                        <Badge bg="primary" className="px-3 py-2">C++ Programming</Badge>
-                        <Badge bg="secondary" className="px-3 py-2">Object-Oriented Programming</Badge>
-                        <Badge bg="info" className="px-3 py-2">Problem Solving</Badge>
-                        <Badge bg="success" className="px-3 py-2">Team Collaboration</Badge>
-                        <Badge bg="warning" className="px-3 py-2">Code Review</Badge>
-                      </div>
                     </div>
                   </div>
                 </div>
