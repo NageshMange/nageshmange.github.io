@@ -1232,6 +1232,102 @@ a:hover .fa-whatsapp {
   color: #25D366 !important;
 }
 
+/* Experience Section Mobile Optimization */
+.experience-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Mobile-specific experience styling */
+@media (max-width: 768px) {
+  .experience-card .card-body {
+    padding: 1.5rem !important;
+  }
+  
+  .experience-card h3 {
+    font-size: 1.4rem !important;
+    line-height: 1.3;
+    text-align: center;
+  }
+  
+  .experience-card h5 {
+    font-size: 1rem !important;
+    text-align: center;
+  }
+  
+  .experience-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .experience-card ul li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .experience-card .badge {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    margin: 2px;
+  }
+}
+
+@media (max-width: 576px) {
+  .experience-card .card-body {
+    padding: 1rem !important;
+  }
+  
+  .experience-card h3 {
+    font-size: 1.2rem !important;
+  }
+  
+  .experience-card h5 {
+    font-size: 0.9rem !important;
+  }
+  
+  .experience-card p {
+    font-size: 0.9rem;
+  }
+  
+  .experience-card ul li {
+    font-size: 0.85rem;
+  }
+  
+  .experience-card .badge {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+  
+  /* Better spacing for mobile */
+  .experience-card .mb-3 {
+    margin-bottom: 1rem !important;
+  }
+  
+  .experience-card .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-card h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  .experience-card .bg-primary {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .experience-card .bg-primary span {
+    font-size: 1.2rem !important;
+  }
+}
+
 /* Additional centering fixes */
 .navbar {
   width: 100% !important;
