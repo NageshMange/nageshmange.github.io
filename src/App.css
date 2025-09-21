@@ -1507,21 +1507,91 @@ a:hover .fa-whatsapp {
 
 @media (max-width: 576px) {
   #experience {
-    padding: 1.2rem 0 !important;
+    padding: 1.5rem 0 !important;
   }
   
   #experience .container {
-    padding-left: 0.3rem !important;
-    padding-right: 0.3rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
   }
   
   #experience .display-5 {
-    font-size: 1.4rem !important;
-    margin-bottom: 0.8rem !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.2;
   }
   
   #experience .lead {
+    font-size: 0.95rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+/* Phone-specific enhancements */
+@media (max-width: 576px) and (min-height: 600px) {
+  .mobile-experience-card {
+    margin: 0 0.5rem 2rem 0.5rem !important;
+    border-radius: 16px !important;
+    background: rgba(255, 255, 255, 0.98);
+  }
+  
+  .mobile-experience-card .card-body {
+    padding: 1.5rem 1rem !important;
+  }
+  
+  .mobile-experience-card .bg-primary {
+    width: 70px !important;
+    height: 70px !important;
+    margin-bottom: 1.2rem !important;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+  }
+  
+  .mobile-experience-card .bg-primary span {
+    font-size: 1.8rem !important;
+  }
+  
+  .mobile-experience-card h3 {
+    font-size: 1.3rem !important;
+    margin-bottom: 1rem !important;
+    font-weight: 800 !important;
+  }
+  
+  .mobile-experience-card .badge {
+    font-size: 0.85rem !important;
+    padding: 8px 16px !important;
+    border-radius: 25px !important;
+    box-shadow: 0 3px 10px rgba(13, 110, 253, 0.2);
+  }
+  
+  .mobile-experience-card h5 {
+    font-size: 0.95rem !important;
+    margin-bottom: 1.2rem !important;
+    font-weight: 600;
+  }
+  
+  .mobile-experience-card p {
     font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1.3rem !important;
+  }
+  
+  .mobile-experience-card h6 {
+    font-size: 1rem !important;
+    margin-bottom: 1rem !important;
+    font-weight: 700;
+  }
+  
+  .mobile-experience-card .small {
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+    font-weight: 500;
+  }
+  
+  .mobile-experience-card .row .col-12 > div {
+    padding: 0.8rem !important;
+    margin-bottom: 6px;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   }
 }
 

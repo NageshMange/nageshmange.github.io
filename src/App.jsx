@@ -300,12 +300,12 @@ function App() {
                   {/* Mobile-First Layout */}
                   <div className="text-center mb-4">
                     <div className="bg-primary rounded-circle p-3 mx-auto mb-3" 
-                         style={{width: '70px', height: '70px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                      <span style={{color: 'white', fontSize: '1.8rem'}}>💼</span>
+                         style={{width: '80px', height: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                      <span style={{color: 'white', fontSize: '2rem'}}>💼</span>
                     </div>
-                    <h3 className="text-primary fw-bold mb-2 h4">C++ Programming Intern</h3>
-                    <Badge bg="primary" className="mb-3 px-3 py-2 fs-6">Completed</Badge>
-                    <h5 className="text-secondary mb-3 fs-6">🏢 CodSoft • 📅 February - March 2025</h5>
+                    <h3 className="text-primary fw-bold mb-3">C++ Programming Intern</h3>
+                    <Badge bg="primary" className="mb-3 px-4 py-2 fs-6 fw-bold">✅ Completed</Badge>
+                    <h5 className="text-secondary mb-4 lh-base">🏢 CodSoft • 📅 February - March 2025</h5>
                   </div>
                   
                   {/* Description */}
@@ -479,7 +479,7 @@ function App() {
                         </div>
                         <div>
                           <h6 className="fw-bold mb-1">WhatsApp</h6>
-                          <a href="https://wa.me/9730302261" target="_blank" className="text-decoration-none">
+                          <a href="https://wa.me/919730302261" target="_blank" className="text-decoration-none">
                             +91 9730302261
                           </a>
                         </div>
@@ -510,7 +510,7 @@ function App() {
                         <Button variant="outline-info" href="https://www.instagram.com/its_nageshmange/" target="_blank" className="social-button">
                           <FaInstagram className="me-2" />Instagram
                         </Button>
-                        <Button variant="outline-success" href="https://wa.me/9730302261" target="_blank" className="social-button">
+                        <Button variant="outline-success" href="https://wa.me/919730302261" target="_blank" className="social-button">
                           <FaWhatsapp className="me-2" />WhatsApp
                         </Button>
                       </div>
@@ -554,25 +554,12 @@ function App() {
                 <a href="https://github.com/NageshMange" target="_blank" className="text-white text-decoration-none" style={{fontSize: '1.5rem'}}>
                   <FaGithub className="social-link" />
                 </a>
-                <a href="https://wa.me/9730302261" target="_blank" className="text-white text-decoration-none" style={{fontSize: '1.5rem'}}>
+                <a href="https://wa.me/919730302261" target="_blank" className="text-white text-decoration-none" style={{fontSize: '1.5rem'}}>
                   <FaWhatsapp className="social-link" />
                 </a>
               </div>
             </Col>
             <Col lg={4} className="text-center">
-              <Button 
-                variant="outline-light" 
-                size="sm" 
-                className="mb-3 back-to-top-btn"
-                onClick={() => {
-                  window.scrollTo({ 
-                    top: 0, 
-                    behavior: 'smooth' 
-                  });
-                }}
-              >
-                ⬆️ Back to Top
-              </Button>
               <div>
                 <small className="text-light">Available for opportunities</small>
               </div>
